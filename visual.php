@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Word Trace</title>
+	<title>Visual Annotation Blog</title>
 
 	<!--Jquery Library-->
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -19,8 +19,10 @@
 
 	<!--stylesheet-->
 	<link rel="stylesheet" type="text/css" href="style/visualstyle.css">
+	<!--Java Script-->
+	<script type="text/javascript" src="js/visualstyle.js"></script>
 </head>
-<body>
+<body onload="highlightSelection();">
 <div class="container-fluid">
 	<header>
 		<h1 class="title">Visual Annotation Blog</h1>
@@ -33,6 +35,32 @@
 	Browse posts of your peers and respond to some of them.  You might want to agree with their ideas and add some supportive thoughts or visuals in the comment box.  Or you might want to suggest a different approach.  You might even choose to redefine the image and work with a new concept.  Once an image has been annotated, the only way to add visuals or thoughts about that image is to comment on a post.  You may comment on any post and upload media files with your comments.
 
 	</p>
-	
+	<div class="row" >
+	<!--First Column-->
+	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+		<p class="poem"  onclick="highlightSelection();">
+		Black A, white E, red I, green U, blue O - vowels,<br>		
+		Some day I will open your silent pregnancies:<br>
+		A, black belt, hairy with burst flies,<br>
+		Bumbling and buzzing over stinking cruelties,<br>
+		<br>
+		Pits of night; E, candour of sand pavilions,<br>
+		High glacial spears, white kings, trembling Queen Anne's lace;<br>
+		I, bloody spittle, laughter dribbling from a face<br>
+		In wild denial or in anger, vermilions;<br>
+		<br>
+		U,&#46;&#46;&#46; divine movement of viridian seas,<br>
+		Peace of pastures animal-strewn, peace of calm lines<br>
+		Drawn on foreheads worn with heavy alchemies;<br>
+		<br>
+		O, supreme Trumpet, harsh with strange stridencies,<br>
+		Silences traced in angels and astral designs:<br>
+		O&#46;&#46;&#46;Omega&#46;&#46;&#46;the violet light of His Eyes!<br>	
+
+		</p>
+	</div>
+	<!--Second Column-->
+	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+	</div>
 </div>
 </body>
