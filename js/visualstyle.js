@@ -1,17 +1,20 @@
-function highlightSelection() {
-	alert("called");
-    var userSelection = window.getSelection().toString();
-    alert(userSelection);
-    highlightRange(userSelection);
 
-}
+$(document).ready(function(){
 
-function highlightRange(range) {
-	alert("highlightRange is called");
-    var newNode = document.createElement("div");
-    newNode.setAttribute(
-       "style",
-       "background-color: yellow; display: inline;"
-    );
-    range.surroundContents(newNode);
+      $('#poem').click(function() {
+        var selected=getSelectionText();
+        alert(selected);
+      });
+});
+
+
+
+function getSelectionText() {
+    var text = "";
+    if (window.getSelection) {
+        text = window.getSelection().toString();
+    } else if (document.selection && document.selection.type != "Control") {
+        text = document.selection.createRange().text;
+    }
+    return text;
 }

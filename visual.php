@@ -22,7 +22,7 @@
 	<!--Java Script-->
 	<script type="text/javascript" src="js/visualstyle.js"></script>
 </head>
-<body onload="highlightSelection();">
+<body>
 <div class="container-fluid">
 	<header>
 		<h1 class="title">Visual Annotation Blog</h1>
@@ -35,10 +35,10 @@
 	Browse posts of your peers and respond to some of them.  You might want to agree with their ideas and add some supportive thoughts or visuals in the comment box.  Or you might want to suggest a different approach.  You might even choose to redefine the image and work with a new concept.  Once an image has been annotated, the only way to add visuals or thoughts about that image is to comment on a post.  You may comment on any post and upload media files with your comments.
 
 	</p>
-	<div class="row" >
+	<div class="row">
 	<!--First Column-->
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
-		<p class="poem"  onclick="highlightSelection();">
+		<p class="poem" id="poem">
 		Black A, white E, red I, green U, blue O - vowels,<br>		
 		Some day I will open your silent pregnancies:<br>
 		A, black belt, hairy with burst flies,<br>
