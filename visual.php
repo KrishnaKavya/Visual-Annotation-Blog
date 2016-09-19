@@ -37,7 +37,7 @@
 	</p>
 	<div class="row">
 	<!--First Column-->
-	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"  onload="highlightSelection();">
 		<p class="poem" id="poem">
 		Black A, white E, red I, green U, blue O - vowels,<br>		
 		Some day I will open your silent pregnancies:<br>

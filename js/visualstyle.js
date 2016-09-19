@@ -2,19 +2,11 @@
 $(document).ready(function(){
 
       $('#poem').click(function() {
-        var selected=getSelectionText();
-        alert(selected);
+         var range = window.getSelection().getRangeAt(0),
+        span = document.createElement('span');
+         span.className = 'highlight';
+         span.appendChild(range.extractContents());
+         range.insertNode(span);
       });
 });
 
-
-
-function getSelectionText() {
-    var text = "";
-    if (window.getSelection) {
-        text = window.getSelection().toString();
-    } else if (document.selection && document.selection.type != "Control") {
-        text = document.selection.createRange().text;
-    }
-    return text;
-}
