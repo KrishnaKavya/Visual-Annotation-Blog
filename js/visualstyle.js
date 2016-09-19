@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+ var selections[];
 
       $('#poem').click(function() {
          var range = window.getSelection().getRangeAt(0),
