@@ -1,0 +1,15 @@
+.inputfield{
+padding-left: 15px;
+border-radius: 25px;
+border:solid 2px;	
+}
+.form{
+	padding-left: 15px;
+	font-weight: bold;
+}
+.add{
+	padding-left: 25px;
+}
+.submit{
+	padding-left: 200px;
+}
