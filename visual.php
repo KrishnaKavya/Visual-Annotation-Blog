@@ -37,7 +37,7 @@
 	</p>
 	<div class="row">
 	<!--First Column-->
-	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"  onload="highlightSelection();">
+	<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"  onload="highlightSelection();">
 		<p class="poem" id="poem">
 		Black A, white E, red I, green U, blue O - vowels,<br>		
 		Some day I will open your silent pregnancies:<br>
@@ -60,7 +60,8 @@
 		</p>
 	</div>
 	<!--Second Column-->
-	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+	<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7" >
+	<iframe src="practice.html" name="phaseBox" id="phaseBox" height="100%" width="100%"></iframe>
 	</div>
 </div>
 </body>
