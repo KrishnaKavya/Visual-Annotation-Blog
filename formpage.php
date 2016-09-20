@@ -1,3 +1,7 @@
+<?php
+	//adding database connection. 
+	require_once('mysqli_connect.php'); 
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,7 +56,7 @@ Video:
 URL:
 <input type="text" name="url" size="25" class="inputfield" ><br><br><br>
 </div>
-Reflect: <input type="text" name="text" size="40" class="inputfield"><br><br>
+Reflect: <input type="text" name="reflect" size="40" class="inputfield"><br><br>
 <div class="submit">
 <input type="submit" name="submit">
 </div>
@@ -60,3 +64,44 @@ Reflect: <input type="text" name="text" size="40" class="inputfield"><br><br>
 </form>
 </body>
 </html>
+
+<?php
+/*
+* The function to store the uploaded data to the database. 
+* If the submit button is clicked, the fields of the form are fetched in the php variables.
+* 
+*/
+if(isset($_POST['submit'])){
+	/*fetching variables from form and assigning to variables. */
+	$text=$_POST['text'];
+	$url=$_POST['url'];
+	$reflect=$_POST['reflect'];
+	/* The getimage size checks if the image is uploaded or null.
+	* if the files returns false, the image is not uploaded.
+	*/
+	if(getimagesize($_FILES['image']['tmp_name'])==FALSE){
+		$image=null;
+	}else{
+	/*The image is feteched from the Files array using 
+	* a temporary name then its encoded usinf base64. 
+	*/
+		$image=addslashes($_FILES['image']['tmp_name']);
+		$imagename=addslashes(($_FILES['image']['name']));
+		$image=file_get_contents($image);
+		$image=base64_encode($image);
+
+	}
+	/*Query to insert a row in the visual table. 
+	* Visual table keeps track of all the data uploaded or submitted to the orm
+	*/ 
+	$insertquery= "INSERT INTO `visual` (`user_id`, `poem_text`, `text`, `imagename`,`image`, `url`, `reflect`) VALUES ('krishna', 'lak', '$text', '$imagename', '$image','$url', '$reflect')";
+	$insertresult =@mysqli_query($dbc, $insertquery);
+ 	if($insertresult){
+ 		echo "success";
+ 	}else{
+ 		echo "query not executed";
+ 	}
+
+}
+
+?>
