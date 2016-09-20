@@ -1,6 +1,7 @@
 <?php
 	//adding database connection. 
 	require_once('mysqli_connect.php'); 
+	$userid="krishna";
 ?>
 <!DOCTYPE html>
 <html>
@@ -91,10 +92,20 @@ if(isset($_POST['submit'])){
 		$image=base64_encode($image);
 
 	}
+	/*
+	* To save the uploaded video. 
+	* the name of the video is saved in the database and the file is moved to the 
+	* uploaded directory.
+	* The name of the directory is concatenated with the user id to maintain the Unique name. 
+	*/
+	$videoname=addslashes($_FILES['video']['name']);
+	$video=$_FILES['video']['tmp_name'];
+	move_uploaded_file($video, "uploaded/".$videoname);
+
 	/*Query to insert a row in the visual table. 
 	* Visual table keeps track of all the data uploaded or submitted to the orm
 	*/ 
-	$insertquery= "INSERT INTO `visual` (`user_id`, `poem_text`, `text`, `imagename`,`image`, `url`, `reflect`) VALUES ('krishna', 'lak', '$text', '$imagename', '$image','$url', '$reflect')";
+	$insertquery= "INSERT INTO `visual` (`user_id`, `poem_text`, `text`, `imagename`,`image`, `videoname`, `url`, `reflect`) VALUES ('krishna', 'la', '$text', '$imagename', '$image','$videoname','$url', '$reflect')";
 	$insertresult =@mysqli_query($dbc, $insertquery);
  	if($insertresult){
  		echo "success";
