@@ -4,8 +4,6 @@
 	session_start();
 	$word=$_REQUEST['word'];		//getting poem Text from the poem. 
 	$user_login=$_SESSION['user_login'];
-	echo $word;
-	echo $user_login;
 ?>
 <!DOCTYPE html>
 <html>
@@ -77,6 +75,7 @@ Reflect: <input type="text" name="reflect" size="40" class="inputfield"><br><br>
 * 
 */
 if(isset($_POST['submit'])){
+//	display();
 	/*fetching variables from form and assigning to variables. */
 	$text=$_POST['text'];
 	$url=$_POST['url'];
@@ -84,8 +83,13 @@ if(isset($_POST['submit'])){
 	/* The getimage size checks if the image is uploaded or null.
 	* if the files returns false, the image is not uploaded.
 	*/
-	if(getimagesize($_FILES['image']['tmp_name'])==FALSE){
+
+	$temp_name=$_FILES['image']['tmp_name'];
+	echo $temp_name;
+
+	if($temp_name==null){
 		$image=null;
+		$imagename=null;
 	}else{
 	/*The image is feteched from the Files array using 
 	* a temporary name then its encoded usinf base64. 
@@ -109,14 +113,12 @@ if(isset($_POST['submit'])){
 	/*Query to insert a row in the visual table. 
 	* Visual table keeps track of all the data uploaded or submitted to the orm
 	*/ 
+
 	$insertquery= "INSERT INTO `visual` (`user_id`, `poem_text`, `text`, `imagename`,`image`, `videoname`, `url`, `reflect`) VALUES ('$user_login', '$word', '$text', '$imagename', '$image','$videoname','$url', '$reflect')";
 	$insertresult =@mysqli_query($dbc, $insertquery);
- 	if($insertresult){
- 		echo "success";
- 	}else{
- 		echo "query not executed";
- 	}
 
 }
-
+function display(){
+	echo "display called";
+}
 ?>
