@@ -42,23 +42,97 @@
 	<!--First Column-->
 	<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"  onload="highlightSelection();">
 		<p class="poem" id="poem">
-		<input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=black'" id="black" value="Black" name="black" class="word"/> A, white E, red I, green U, blue O - vowels,<br>		
-		Some day I will open your silent pregnancies:<br>
-		A, black belt, hairy with burst flies,<br>
-		Bumbling and buzzing over stinking cruelties,<br>
-		<br>
-		Pits of night; E, candour of sand pavilions,<br>
-		High glacial spears, white kings, trembling Queen Anne's lace;<br>
-		I, bloody spittle, laughter dribbling from a face<br>
-		In wild denial or in anger, vermilions;<br>
-		<br>
-		U,&#46;&#46;&#46; divine movement of viridian seas,<br>
-		Peace of pastures animal-strewn, peace of calm lines<br>
-		Drawn on foreheads worn with heavy alchemies;<br>
-		<br>
-		O, supreme Trumpet, harsh with strange stridencies,<br>
-		Silences traced in angels and astral designs:<br>
-		O&#46;&#46;&#46;Omega&#46;&#46;&#46;the violet light of His Eyes!<br>	
+	<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=black'" id="black" value="Black" name="black" class="word"/></span> A, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=white'" value="white" name="white" class="word" /></span> E, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=red'" value="red" name="red" class="word"/></span> I, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=green'" value="green" name="green" class="word"/></span> U, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=blue'" value="blue" name="blue" class="word"/></span> O - 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=vowels'" value="vowels" name="vowels" class="word"/></span>,<br>		
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=some'" value="Some" name="some" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=day'" value="day" name="day" class="word"/></span> I will 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=open'" value="open" name="open" class="word"/></span> 
+your 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=silent'" value="silent" name="silent" class="word"/></span>
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=pregnancies'" value="pregnancies" name="pregnancies" class="word"/></span>:<br>
+A, 
+<span>black</span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=belt'" value="belt" name="belt" class="word"/></span>, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=hairy'" value="hairy" name="hairy" class="word"/></span> 
+with 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=burst'" value="burst" name="burst" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=flies'" value="flies" name="flies" class="word"/></span>,<br>
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=Bumbling'" value="Bumbling" name="Bumbling" class="word"/></span> and 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=buzzing'" value="buzzing" name="buzzing" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=over'" value="over" name="over" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=stinking'" value="stinking" name="stinking" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=cruelties'" value="cruelties" name="cruelties" class="word"/></span>,<br>
+<br>
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=Pits'" value="Pits" name="Pits" class="word"/></span> 
+of 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=night'" value="night" name="night" class="word"/></span>; 
+E, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=candour'" value="candour" name="candour" class="word"/></span> 
+of 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=sand'" value="sand" name="sand" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=pavilions'" value="pavilions" name="pavilions" class="word"/></span>
+,<br>
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=High'" value="High" name="High" class="word"/></span>
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=glacial'" value="glacial" name="glacial" class="word"/></span> 
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=spears'" value="spears" name="spears" class="word"/></span>
+ , 
+ <span>white</span> 
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=kings'" value="kings" name="kings" class="word"/></span>, 
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=trembling'" value="trembling" name="trembling" class="word"/></span> 
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=Queen'" value="Queen" name="Queen" class="word"/></span> 
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=Anne" value="Anne's" name="Anne's" class="word"/></span> 
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=lace'" value="lace" name="lace" class="word"/></span>;<br>
+<span>I</span>, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=bloody'" value="bloody" name="bloody" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=spittle'" value="spittle" name="spittle" class="word"/></span>, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=laughter'" value="laughter" name="laughter" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=dribbling'" value="dribbling" name="dribbling" class="word"/></span> 
+<span>from</span> <span>a</span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=face'" value="face" name="face" class="word"/></span><br>
+<span>In</span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=wild'" value="wild" name="wild" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=denial'" value="denial" name="denial" class="word"/></span> or in 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=anger'" value="anger" name="anger" class="word"/></span>, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=vermilions'" value="vermilions" name="vermilions" class="word"/></span>;<br>
+<br>
+U,&#46;&#46;&#46; 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=divine'" value="divine" name="divine" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=movement'" value="movement" name="movement" class="word"/></span> of 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=viridian'" value="viridian" name="viridian" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=seas'" value="seas" name="seas" class="word"/></span>,<br>
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=Peace'" value="Peace" name="Peace" class="word"/></span> of 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=pastures'" value="pastures" name="pastures" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=animal'" value="animal-strewn" name="animal-strewn" class="word"/></span>, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=peace'" value="peace" name="peace" class="word"/></span> of 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=calm'" value="calm" name="calm" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=lines'" value="lines" name="lines" class="word"/></span><br>
+
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=Drawn'" value="Drawn" name="Drawn" class="word"/></span> on 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=foreheads'" value="foreheads" name="foreheads" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=worn'" value="worn" name="worn" class="word"/></span> with 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=heavy'" value="heavy" name="heavy" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=alchemies'" value="alchemies" name="alchemies" class="word"/></span>;<br>
+<br>
+O, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=supreme'" value="supreme" name="supreme" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=Trumpet'" value="Trumpet" name="Trumpet" class="word"/></span>, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=harsh'" value="harsh" name="harsh" class="word"/></span> with 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=strange'" value="strange" name="strange" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=stridencies'" value="stridencies" name="stridencies" class="word"/></span>,<br>
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=Silences'" value="Silences" name="Silences" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=traced'" value="traced" name="traced" class="word"/></span> in 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=angels'" value="angels" name="angels" class="word"/></span> and 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=astral'" value="astral" name="astral" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=designs'" value="designs" name="designs" class="word"/></span>:<br>
+O&#46;&#46;&#46;
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=Omega'" value="Omega" name="Omega" class="word"/></span>&#46;&#46;&#46;the 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=violet'" value="violet" name="violet" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=light'" value="light" name="light" class="word"/></span> of His 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=Eyes'" value="Eyes" name="Eyes" class="word"/></span>!<br>
 
 		</p>
 	</div>

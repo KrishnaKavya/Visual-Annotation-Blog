@@ -11,5 +11,13 @@ height: 80px;
 	font-size: 40pt;
 }
 .highlight 
-{ background-color: yellow; 
+{ 
+	background-color: yellow; 
+}
+
+.word{
+	border: none;
+	background: none;
+	padding-left: 0pt;
+	padding-right: 0pt;
 }

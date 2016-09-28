@@ -4,6 +4,8 @@
 	session_start();
 	$word=$_REQUEST['word'];		//getting poem Text from the poem. 
 	$user_login=$_SESSION['user_login'];
+	echo $word;
+	echo $user_login;
 ?>
 <!DOCTYPE html>
 <html>
