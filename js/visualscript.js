@@ -1,7 +1,5 @@
 
 $(document).ready(function(){
- var selections;
- 		alert("entered");
       $('#poem').click(function() {
          var range = window.getSelection().getRangeAt(0),
         span = document.createElement('span');

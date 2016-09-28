@@ -1,10 +1,13 @@
+<?php
+	session_start();
+	//Deployment Changes:get the email id.
+	$user_login="krishna";					//user id. 
+	$_SESSION['user_login']= $user_login;	//Adding user login id to the session variables
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Visual Annotation Blog</title>
-
-	<!--Jquery Library-->
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -20,7 +23,7 @@
 	<!--stylesheet-->
 	<link rel="stylesheet" type="text/css" href="style/visualstyle.css">
 	<!--Java Script-->
-	<script type="text/javascript" src="js/visualstyle.js"></script>
+	<script type="text/javascript" src="js/visualscript.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -39,7 +42,7 @@
 	<!--First Column-->
 	<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"  onload="highlightSelection();">
 		<p class="poem" id="poem">
-		Black A, white E, red I, green U, blue O - vowels,<br>		
+		<input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/Visual-Annotation-Blog/formpage.php?word=black'" id="black" value="Black" name="black" class="word"/> A, white E, red I, green U, blue O - vowels,<br>		
 		Some day I will open your silent pregnancies:<br>
 		A, black belt, hairy with burst flies,<br>
 		Bumbling and buzzing over stinking cruelties,<br>
@@ -61,7 +64,7 @@
 	</div>
 	<!--Second Column-->
 	<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7" >
-	<iframe src="practice.html" name="phaseBox" id="phaseBox" height="100%" width="100%"></iframe>
+	<iframe src="" name="phaseBox" id="phaseBox" height="200%" width="100%" frameborder="0"></iframe>
 	</div>
 </div>
 </body>

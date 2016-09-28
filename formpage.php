@@ -1,7 +1,9 @@
 <?php
 	//adding database connection. 
 	require_once('mysqli_connect.php'); 
-	$userid="krishna";
+	session_start();
+	$word=$_REQUEST['word'];		//getting poem Text from the poem. 
+	$user_login=$_SESSION['user_login'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -105,7 +107,7 @@ if(isset($_POST['submit'])){
 	/*Query to insert a row in the visual table. 
 	* Visual table keeps track of all the data uploaded or submitted to the orm
 	*/ 
-	$insertquery= "INSERT INTO `visual` (`user_id`, `poem_text`, `text`, `imagename`,`image`, `videoname`, `url`, `reflect`) VALUES ('krishna', 'la', '$text', '$imagename', '$image','$videoname','$url', '$reflect')";
+	$insertquery= "INSERT INTO `visual` (`user_id`, `poem_text`, `text`, `imagename`,`image`, `videoname`, `url`, `reflect`) VALUES ('$user_login', '$word', '$text', '$imagename', '$image','$videoname','$url', '$reflect')";
 	$insertresult =@mysqli_query($dbc, $insertquery);
  	if($insertresult){
  		echo "success";
