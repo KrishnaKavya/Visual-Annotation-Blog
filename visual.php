@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	//Deployment Changes:get the email id.
-	$user_login="krishna";					//user id. 
+	$user_login="kavya";					//user id. 
 	$_SESSION['user_login']= $user_login;	//Adding user login id to the session variables
 ?>
 <!DOCTYPE html>

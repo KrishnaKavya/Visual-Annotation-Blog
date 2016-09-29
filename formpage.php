@@ -4,6 +4,9 @@
 	session_start();
 	$word=$_REQUEST['word'];		//getting poem Text from the poem. 
 	$user_login=$_SESSION['user_login'];
+
+	// ToDo: 1. Fetch the time stamp and save it in database. While executing the query. orderBy timestamp. 
+	// ToDo: 2. update display method. 
 ?>
 <!DOCTYPE html>
 <html>
@@ -47,6 +50,11 @@ The fields are indented according to the layout of the form.
 
 -->
 <div class="container-fluid"></div>
+<div class="display" id="display">
+	<?php
+		display($word, $dbc);
+	?>
+</div>
 <div class="form">
 <form method="POST" enctype="multipart/form-data"> <br>
 Write text of image phrase or clause: <input type="text" name="text" size="40" class="inputfield"><br><br>
@@ -74,8 +82,9 @@ Reflect: <input type="text" name="reflect" size="40" class="inputfield"><br><br>
 * If the submit button is clicked, the fields of the form are fetched in the php variables.
 * 
 */
+
 if(isset($_POST['submit'])){
-//	display();
+
 	/*fetching variables from form and assigning to variables. */
 	$text=$_POST['text'];
 	$url=$_POST['url'];
@@ -110,6 +119,12 @@ if(isset($_POST['submit'])){
 	$video=$_FILES['video']['tmp_name'];
 	move_uploaded_file($video, "uploaded/".$videoname);
 
+	/*
+	* Fetching a time zone and getting the current date. 
+	*/
+	// Change the line below to your timezone!
+	date_default_timezone_set('America/Chicago');
+	$date = date('m/d/Y h:i:s a', time());
 	/*Query to insert a row in the visual table. 
 	* Visual table keeps track of all the data uploaded or submitted to the orm
 	*/ 
@@ -118,7 +133,25 @@ if(isset($_POST['submit'])){
 	$insertresult =@mysqli_query($dbc, $insertquery);
 
 }
-function display(){
-	echo "display called";
+function display($word, $dbc){
+	$selectQuery="SELECT * from visual where poem_text='$word'";
+	$result=mysqli_query($dbc, $selectQuery);
+
+	if ($result->num_rows > 0) {
+		while($row = $result->fetch_assoc()) {
+			$userid=$row['user_id'];
+			$text=$row['text'];
+			$imagename=$row['imagename'];
+			//image display
+			$videoname=$row['videoname'];
+			//video display
+			$url=$row['url'];
+			$reflect=$row['reflect'];
+			echo $userid." ".$text." ".$imagename." ".$videoname." ".$url." ".$reflect;
+
+	}
+}else{
+	echo "Be the first to add an annotation for ". $word;
+}
 }
 ?>
