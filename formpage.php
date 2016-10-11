@@ -55,19 +55,21 @@ The fields are indented according to the layout of the form.
 		display($word, $dbc);
 	?>
 </div>
+<hr noshade>
 <div class="form">
-<form method="POST" enctype="multipart/form-data"> <br>
-Write text of image phrase or clause: <input type="text" name="text" size="40" class="inputfield"><br><br>
-Add: <br>
+<form method="POST" enctype="multipart/form-data">
+<span class="font">Write text of image phrase or clause:</span>
+<input type="text" name="text" size="40" class="inputfield"><br>
+<span class="font">Add: </span><br>
 <div class="add">
-Image: <br>
+<span class="font">Image: </span><br>
 <input type="file" name="image" accept="image/*"/><br>
-Video:
+<span class="font">Video: </span>
 <input type="file" name="video" accept="video/*"/ ><br>
-URL:
-<input type="text" name="url" size="25" class="inputfield" ><br><br><br>
+<span class="font"> URL: </span>
+<input type="text" name="url" size="25" class="inputfield" ><br><br>
 </div>
-Reflect: <input type="text" name="reflect" size="40" class="inputfield"><br><br>
+<span class="font"> Reflect:</span><input type="text" name="reflect" size="40" class="inputfield"><br>
 <div class="submit">
 <input type="submit" name="submit">
 </div>
@@ -103,11 +105,9 @@ if(isset($_POST['submit'])){
 	/*The image is feteched from the Files array using 
 	* a temporary name then its encoded usinf base64. 
 	*/
-		$image=addslashes($_FILES['image']['tmp_name']);
+		$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
 		$imagename=addslashes(($_FILES['image']['name']));
-		$image=file_get_contents($image);
-		$image=base64_encode($image);
-
+		
 	}
 	/*
 	* To save the uploaded video. 
@@ -148,6 +148,7 @@ function display($word, $dbc){
 			$url=$row['url'];
 			$reflect=$row['reflect'];
 			echo $userid." ".$text." ".$imagename." ".$videoname." ".$url." ".$reflect;
+			echo '<img  height="250" width="250" src="data:image;base64,'.base64_encode( $row['image'] ).'"/>';
 
 	}
 }else{

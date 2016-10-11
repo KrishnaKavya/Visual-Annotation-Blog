@@ -6,10 +6,15 @@ border:solid 2px;
 .form{
 	padding-left: 15px;
 	font-weight: bold;
+	font-size: 10px;
 }
 .add{
 	padding-left: 25px;
 }
 .submit{
 	padding-left: 200px;
+}
+.font{
+	font-size: 10px;
+	font-family: sans-serif;
 }
