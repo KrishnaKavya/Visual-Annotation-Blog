@@ -96,8 +96,6 @@ if(isset($_POST['submit'])){
 	*/
 
 	$temp_name=$_FILES['image']['tmp_name'];
-	echo $temp_name;
-
 	if($temp_name==null){
 		$image=null;
 		$imagename=null;
@@ -144,11 +142,15 @@ function display($word, $dbc){
 			$imagename=$row['imagename'];
 			//image display
 			$videoname=$row['videoname'];
+			$videoPath="uploaded/".$videoname;
+			echo $videoPath;
 			//video display
 			$url=$row['url'];
 			$reflect=$row['reflect'];
 			echo $userid." ".$text." ".$imagename." ".$videoname." ".$url." ".$reflect;
-			echo '<img  height="250" width="250" src="data:image;base64,'.base64_encode( $row['image'] ).'"/>';
+			echo '<img class="image" height="100" width="100" src="data:image;base64,'.base64_encode( $row['image'] ).'"/>';
+			echo "<video class='video'id='$videoname' controls height='200' width='200' >
+<source src='$videoPath' type='video/mp4'>Your browser does not support the video tag.</video>";
 
 	}
 }else{
