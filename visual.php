@@ -138,7 +138,7 @@ O&#46;&#46;&#46;
 	</div>
 	<!--Second Column-->
 	<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7" >
-	<iframe src="" name="phaseBox" id="phaseBox" height="200%" width="100%" frameborder="0"></iframe>
+	<iframe src="" name="phaseBox" id="phaseBox" height="350%" width="100%" frameborder="2"></iframe>
 	</div>
 </div>
 </body>
