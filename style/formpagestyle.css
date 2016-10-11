@@ -18,3 +18,14 @@ border:solid 2px;
 	font-size: 10px;
 	font-family: sans-serif;
 }
+.image{
+	height:100pt;
+	width:100pt;
+}
+.video{
+	height: 150pt;
+	width: 150pt;
+}
+table, th, td, tr{
+	 border: 2px solid black;
+}

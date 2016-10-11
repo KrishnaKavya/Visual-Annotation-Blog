@@ -69,7 +69,7 @@ The fields are indented according to the layout of the form.
 <span class="font"> URL: </span>
 <input type="text" name="url" size="25" class="inputfield" ><br><br>
 </div>
-<span class="font"> Reflect:</span><input type="text" name="reflect" size="40" class="inputfield"><br>
+<span class="font"> Reflect:</span><input type="text" name="reflect" size="40" class="inputfield"><br><br>
 <div class="submit">
 <input type="submit" name="submit">
 </div>
@@ -147,9 +147,32 @@ function display($word, $dbc){
 			//video display
 			$url=$row['url'];
 			$reflect=$row['reflect'];
+			?>
+			<table width="500">
+				<tr>
+					<td>
+						<?php ?>
+					</td>
+					<td> 
+						<?php ?>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<?php ?>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<?php ?>
+					</td>
+				</tr>
+				<tr><td></td><td></td></tr>
+			</table>
+			<?php
 			echo $userid." ".$text." ".$imagename." ".$videoname." ".$url." ".$reflect;
-			echo '<img class="image" height="100" width="100" src="data:image;base64,'.base64_encode( $row['image'] ).'"/>';
-			echo "<video class='video'id='$videoname' controls height='200' width='200' >
+			echo '<img class="image"  src="data:image;base64,'.base64_encode( $row['image'] ).'"/>';
+			echo "<video class='video' id='$videoname' controls >
 <source src='$videoPath' type='video/mp4'>Your browser does not support the video tag.</video>";
 
 	}
