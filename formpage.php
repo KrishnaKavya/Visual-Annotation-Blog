@@ -131,6 +131,19 @@ if(isset($_POST['submit'])){
 	$insertresult =@mysqli_query($dbc, $insertquery);
 
 }
+/* 
+	The display function displayes all the annotations in chronological order(olderst to latest).
+	The select query fetches all the annotations written for the word. 
+	All the results are processed by each row fetched from the database. 
+	The names and the content is fetched into variables. 
+	A table design is used to represent each annotation.
+	The table has 3 rows
+	1, has the user name and phrase of the poem.
+	2. has the image and video sections.
+	3. has the URL and reflect. 
+
+	Displaying of Video. The video's source refers to the directory that saves all the uploaded videos(uploaded).
+*/
 function display($word, $dbc){
 	$selectQuery="SELECT * from visual where poem_text='$word'";
 	$result=mysqli_query($dbc, $selectQuery);
@@ -140,10 +153,8 @@ function display($word, $dbc){
 			$userid=$row['user_id'];
 			$text=$row['text'];
 			$imagename=$row['imagename'];
-			//image display
 			$videoname=$row['videoname'];
 			$videoPath="uploaded/".$videoname;
-			//video display
 			$url=$row['url'];
 			$reflect=$row['reflect'];
 			?>
