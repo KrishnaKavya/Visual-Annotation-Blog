@@ -143,37 +143,49 @@ function display($word, $dbc){
 			//image display
 			$videoname=$row['videoname'];
 			$videoPath="uploaded/".$videoname;
-			echo $videoPath;
 			//video display
 			$url=$row['url'];
 			$reflect=$row['reflect'];
 			?>
-			<table width="500">
+			<table width="200">
 				<tr>
 					<td>
-						<?php ?>
+						<b>Mediator: </b><?php echo $userid; ?>
 					</td>
 					<td> 
-						<?php ?>
+						<b>Clause: </b><?php echo $text; ?>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<?php ?>
+						<?php 
+						echo '<img class="image" height="150pt" width="150pt" src="data:image;base64,'.base64_encode( $row['image'] ).'"/>';
+						?>				
+					</td>
+					<td>
+						<?php echo "<video  height=150pt width=150pt class='video' id='$videoname' controls >
+							<source src='$videoPath' type='video/mp4'>Your browser does not support the video tag.</video>";
+						?>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<?php ?>
+						<b>URL: </b>
+						<?php 
+						echo $url;
+						?> 
+					</td>
+					<td>
+						<b>Reflect: </b>
+						<?php
+						echo $reflect;
+						?>
 					</td>
 				</tr>
-				<tr><td></td><td></td></tr>
+				<tr><hr noshade=""></tr>
 			</table>
 			<?php
-			echo $userid." ".$text." ".$imagename." ".$videoname." ".$url." ".$reflect;
-			echo '<img class="image"  src="data:image;base64,'.base64_encode( $row['image'] ).'"/>';
-			echo "<video class='video' id='$videoname' controls >
-<source src='$videoPath' type='video/mp4'>Your browser does not support the video tag.</video>";
+				
 
 	}
 }else{

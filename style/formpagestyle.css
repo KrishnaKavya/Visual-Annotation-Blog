@@ -19,13 +19,18 @@ border:solid 2px;
 	font-family: sans-serif;
 }
 .image{
-	height:100pt;
-	width:100pt;
+	height:150pt;
+	width:150pt;
 }
 .video{
 	height: 150pt;
 	width: 150pt;
 }
 table, th, td, tr{
-	 border: 2px solid black;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 10pt;
 }
+

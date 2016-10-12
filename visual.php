@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	//Deployment Changes:get the email id.
-	$user_login="kavya";					//user id. 
+	$user_login="krishna";					//user id. 
 	$_SESSION['user_login']= $user_login;	//Adding user login id to the session variables
 ?>
 <!DOCTYPE html>
@@ -138,7 +138,7 @@ O&#46;&#46;&#46;
 	</div>
 	<!--Second Column-->
 	<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7" >
-	<iframe src="" name="phaseBox" id="phaseBox" height="350" width="650" frameborder="3"></iframe>
+	<iframe src="" name="phaseBox" id="phaseBox" height="350" width="600" frameborder="0"></iframe>
 	</div>
 </div>
 </body>
